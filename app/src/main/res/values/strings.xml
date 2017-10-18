@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jonqko</string>
+    <string name="button_slider1">next</string>
+    <string name="button_slider2">skip</string>
+    <string name="menu_srch">search</string>
+    <string name="menu_cart">cart</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorIcon">#C7C7C7</color>
+    <color name="colorGrey">#262626</color>
+
+    <!--Custom Style Jonqko Color-->
+    <color name="colorStatusBar">#F85F3B</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+
+    <color name="dot_light_screen_1">#FFFFFF</color>
+    <color name="dot_light_screen_2">#FFFFFF</color>
+
+    <color name="dot_dark_screen_1">#26474C</color>
+    <color name="dot_dark_screen_2">#26474C</color>
+
+    <array name="dot_active">
+        <item>@color/dot_light_screen_1</item>
+        <item>@color/dot_light_screen_2</item>
+    </array>
+
+    <array name="dot_inactive">
+        <item>@color/dot_dark_screen_1</item>
+        <item>@color/dot_dark_screen_2</item>
+    </array>
+
+</resources>

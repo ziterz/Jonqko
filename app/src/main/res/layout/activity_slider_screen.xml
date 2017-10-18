@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slider_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ziterz.jonqko.SliderScreen">
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".5"
+        android:layout_alignTop="@+id/layoutDots"
+        android:background="@android:color/white">
+    </View>
+    -->
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorStatusBar"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbarSliderScreenTop"
+        app:buttonGravity="bottom"
+        app:contentInsetStart="0dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:id="@+id/buttonSlider2"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/button_slider2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/buttonSlider1"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/button_slider1"/>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_above="@+id/toolbarSliderScreenTop"
+        android:background="@color/colorStatusBar">
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutDots">
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
