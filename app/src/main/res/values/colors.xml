@@ -25,5 +25,6 @@
         <item>@color/dot_dark_screen_1</item>
         <item>@color/dot_dark_screen_2</item>
     </array>
+    <color name="colorLine">#C7C7C7</color>
 
 </resources>

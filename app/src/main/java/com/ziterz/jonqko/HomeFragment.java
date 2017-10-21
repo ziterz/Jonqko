@@ -3,6 +3,7 @@ package com.ziterz.jonqko;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -26,7 +27,7 @@ import android.widget.Toast;
  */
 public class HomeFragment extends Fragment {
 
-    private ViewPager viewPager;
+    private ViewPager viewPager,viewPagerTab;
     private ViewPagerAdapter viewPagerAdapter;
     private int[] layouts;
     private LinearLayout dotsLayout;
@@ -51,6 +52,30 @@ public class HomeFragment extends Fragment {
 
         viewPager = (ViewPager)view.findViewById(R.id.view_pager_home);
         dotsLayout = (LinearLayout)view.findViewById(R.id.layoutDotsHome);
+        viewPagerTab = (ViewPager)view.findViewById(R.id.pager);
+
+        TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabHome);
+        tabLayout.addTab(tabLayout.newTab().setText("ITEM"));
+        tabLayout.addTab(tabLayout.newTab().setText("TOKO"));
+        viewPagerTab.setAdapter(new HomeAdapter(getFragmentManager(), 2));
+
+        viewPagerTab.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPagerTab.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
         /*--- Linear Layout Alamat ---*/
         tvAlamat = (TextView)view.findViewById(R.id.textviewAlamat);

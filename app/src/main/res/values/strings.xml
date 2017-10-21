@@ -25,4 +25,10 @@
     <string name="logo">Logo</string>
     <string name="kacapiring_bandung">Kacapiring, Bandung</string>
     <string name="ganti_alamat">Ganti Alamat</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

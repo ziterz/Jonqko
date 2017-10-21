@@ -27,7 +27,8 @@
     </style>
 
     <style name="Jonqko.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="Jonqko.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Jonqko.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -45,4 +46,13 @@
         <item name="android:textColor">@color/colorAccent</item>
         <item name="colorControlNormal">@color/colorAccent</item>
     </style>
+
+    <style name="AppBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

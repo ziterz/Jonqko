@@ -22,6 +22,7 @@
         </android.support.v4.view.ViewPager>
 
         <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
             android:id="@+id/toolbarHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="8"
@@ -109,36 +110,78 @@
         <View
             android:id="@+id/lokasiLayoutDivader"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0.5dp"
             android:layout_below="@+id/alamatLayout"
-            android:background="@android:color/darker_gray" />
-
+            android:background="@color/colorLine" />
 
         <LinearLayout
-            android:id="@+id/highlightLayoutAtas"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:id="@+id/highlightLayout"
             android:layout_below="@+id/lokasiLayoutDivader"
-            android:weightSum="4"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:id="@+id/highlightLayoutAtas"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beras Putih Pasar Rebo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp7.500/Kg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beras Putih Pasar Rebo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp7.500/Kg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/highlightLayoutBawah"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beras Putih Pasar Rebo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp7.500/Kg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beras Putih Pasar Rebo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp7.500/Kg"/>
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/highlightLayoutBawah"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/highlightLayoutAtas"
-            android:weightSum="4"
-            android:orientation="horizontal">
-        </LinearLayout>
 
 
         <View
             android:id="@+id/highlightLayoutDivader"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/highlightLayoutBawah"
-            android:background="@android:color/darker_gray" />
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/highlightLayout"
+            android:background="@color/colorLine" />
 
         <LinearLayout
             android:baselineAligned="false"
@@ -161,28 +204,22 @@
                 app:tabMaxWidth="0dp"
                 app:tabMode="fixed">
 
-                <android.support.design.widget.TabItem
-                    android:id="@+id/tabItem"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Item" />
-
-                <android.support.design.widget.TabItem
-                    android:id="@+id/tabToko"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Toko" />
-
             </android.support.design.widget.TabLayout>
         </LinearLayout>
 
         <View
             android:id="@+id/tablayoutDivader"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0.5dp"
             android:layout_below="@+id/grouptabHome"
-            android:background="@android:color/darker_gray" />
-
+            android:background="@color/colorLine" />
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/tablayoutDivader"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </android.support.v4.view.ViewPager>
 
     </RelativeLayout>
 
