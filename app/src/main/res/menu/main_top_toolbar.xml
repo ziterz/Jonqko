@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:tools="http://schemas.android.com/tools"
+<menu
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:title="@string/menu_srch"
         android:id="@+id/menuSrch"
-        android:icon="?android:attr/actionModeWebSearchDrawable"
-        app:showAsAction="always"/>
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom"/>
         <!-- app:actionViewClass="android.support.v7.widget.SearchView" -->
 
     <item
         android:title="@string/menu_cart"
         android:id="@+id/menuCart"
         android:icon="@drawable/ic_shoppingcart"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 </menu>
