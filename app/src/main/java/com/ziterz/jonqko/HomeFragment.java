@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,6 +50,7 @@ public class HomeFragment extends Fragment {
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbarHome);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(null);
+
 
         viewPager = (ViewPager)view.findViewById(R.id.view_pager_home);
         dotsLayout = (LinearLayout)view.findViewById(R.id.layoutDotsHome);

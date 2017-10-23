@@ -4,10 +4,17 @@
     android:layout_height="match_parent"
     tools:context="com.ziterz.jonqko.TokoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Toko Fragment" />
+        android:numColumns="auto_fit"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth" >
+
+    </GridView>
 
 </FrameLayout>
